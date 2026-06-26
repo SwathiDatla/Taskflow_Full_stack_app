@@ -157,9 +157,11 @@ STORAGES = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
+    "https://cra.link/deployment",
 ]
 
-CSRF_TRUSTED_ORIGINS = []
+CSRF_TRUSTED_ORIGINS = [
+    "https://cra.link/deployment"
+]
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
