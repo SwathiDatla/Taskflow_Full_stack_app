@@ -157,11 +157,12 @@ STORAGES = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    "https://cra.link/deployment",
+    "https://localhost:3000",
+    "https://taskflow-frontend-g4xb.onrender.com",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://cra.link/deployment"
+    "https://taskflow-frontend-g4xb.onrender.com"
 ]
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
