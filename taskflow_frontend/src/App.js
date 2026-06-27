@@ -8,7 +8,7 @@ function App() {
   const [tasks, setTasks] = useState([]);
  
   const fetchTasks = async () => {
-    const res = await API.get("tasks/");
+    const res = await API.get("/api/tasks/");
     setTasks(res.data);
   };
  

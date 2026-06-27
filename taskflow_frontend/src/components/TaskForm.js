@@ -8,7 +8,7 @@ const TaskForm = ({ fetchTasks }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!title.trim()) return;
-    await API.post("tasks/", { title, description, completed: false });
+    await API.post("/api/tasks/", { title, description, completed: false });
     setTitle("");
     setDescription("");
     fetchTasks();
