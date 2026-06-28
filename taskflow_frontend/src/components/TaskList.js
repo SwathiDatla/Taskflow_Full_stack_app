@@ -3,7 +3,7 @@ import API from "../services/api";
 
 const TaskList = ({ tasks, fetchTasks }) => {
   const toggleComplete = async (task) => {
-    await API.put(`tasks/${task.id}/`, {
+    await API.put(`/api/tasks/${task.id}/`, {
       ...task,
       completed: !task.completed,
     });
@@ -11,7 +11,7 @@ const TaskList = ({ tasks, fetchTasks }) => {
   };
 
   const deleteTask = async (id) => {
-    await API.delete(`tasks/${id}/`);
+    await API.delete(`/api/tasks/${id}/`);
     fetchTasks();
   };
 
